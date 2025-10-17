@@ -1,0 +1,29 @@
+# Build outputs
+backend/main
+backend/*.o
+backend/*.so
+backend/*.a
+
+# Docker
+*.tar
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
