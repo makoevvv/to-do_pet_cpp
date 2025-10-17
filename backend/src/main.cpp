@@ -3,8 +3,7 @@
 #include "database/database.h"
 #include "handlers/handlers.h"
 
-// Объяснение: Простая функция для установки CORS заголовков
-// Это нужно чтобы фронтенд с другого порта мог обращаться к бэкенду
+//  Простая функция для установки CORS заголовков
 void setCORSHeaders(httplib::Response& res) {
     res.set_header("Access-Control-Allow-Origin", "*");
     res.set_header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
@@ -12,14 +11,12 @@ void setCORSHeaders(httplib::Response& res) {
 }
 
 int main() {
-    // Инициализируем базу данных
     auto& db = Database::getInstance();
     db.initialize();
     
-    // Создаем HTTP сервер
     httplib::Server svr;
     
-    // Объяснение: Обработчик для CORS preflight запросов (браузеры отправляют их перед основными)
+    // Обработчик для CORS preflight запросов (браузеры отправляют их перед основными)
     svr.Options(".*", [](const httplib::Request& req, httplib::Response& res) {
         setCORSHeaders(res);
         res.status = 200;

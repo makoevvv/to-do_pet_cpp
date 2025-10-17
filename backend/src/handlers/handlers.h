@@ -3,7 +3,7 @@
 #include <string>
 #include <nlohmann/json.hpp>
 
-// Объяснение: Используем современную библиотеку для работы с JSON
+// Используем библиотеку для работы с JSON
 using json = nlohmann::json;
 
 // Структура для представления задачи

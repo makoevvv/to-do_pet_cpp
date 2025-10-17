@@ -1,8 +1,5 @@
-// Объяснение: Базовый URL нашего API
-// В продакшене это будет домен, а для разработки - localhost
 const API_BASE_URL = '/api';
 
-// Объяснение: DOM элементы
 const tasksList = document.getElementById('tasksList');
 const taskInput = document.getElementById('taskInput');
 const loading = document.getElementById('loading');
