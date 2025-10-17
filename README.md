@@ -27,6 +27,36 @@
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 
 
+
+## 📡 API Endpoints
+
+### GET
+   ```http
+   GET /api/tasks
+  ```
+### POST
+   ```http
+   POST /api/tasks
+   Content-Type: application/json
+   {
+      "title": "Новая задача"
+   }
+   ```
+### PUT
+   ```http
+   PUT /api/tasks/{id}
+   Content-Type: application/json
+   {
+      "title": "Обновленная задача",
+      "completed": true
+   }
+   ```
+### DELETE
+   ```http
+   DELETE /api/tasks/{id}
+   ```
+
+
 ## 🛠️ Быстрый старт
 
 ### Предварительные требования
@@ -38,41 +68,21 @@
 ### Установка и запуск
 
 1. **Клонируйте репозиторий**
+   ```bash
    git clone https://github.com/your-username/todo-app.git
    cd todo-app
-2. **Запустите приложение**
-    docker-compose up --build
-3. **Откройте в браузере**
-    http://localhost
+3. **Запустите приложение**
+   ```bash
+   docker-compose up --build
+5. **Откройте в браузере**
+   ```text
+   http://localhost
 ### Остановка приложения
+   ```bash
    docker-compose down
+   ```
 ### Полная переустановка
+   ```bash
    docker-compose down -v
    docker-compose up --build
-
-
-## 📡 API Endpoints
-
-### GET
-  GET /api/tasks
-  
-### POST
-  POST /api/tasks
-  Content-Type: application/json
-  
-  {
-    "title": "Новая задача"
-  }
-
-### PUT
-  PUT /api/tasks/{id}
-  Content-Type: application/json
-  
-  {
-    "title": "Обновленная задача",
-    "completed": true
-  }
-
-### DELETE
-  DELETE /api/tasks/{id}
-
+   ```
