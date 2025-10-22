@@ -72,12 +72,15 @@
    ```bash
    git clone https://github.com/your-username/todo-app.git
    cd todo-app
+    ```
 3. **Запустите приложение**
    ```bash
    docker-compose up --build
+    ```
 5. **Откройте в браузере**
    ```text
    http://localhost
+    ```
 ### Остановка приложения
    ```bash
    docker-compose down
