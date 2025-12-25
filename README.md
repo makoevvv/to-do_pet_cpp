@@ -71,7 +71,7 @@
 1. **Клонируйте репозиторий**
    ```bash
    git clone https://github.com/makoevvv/to-do_pet_cpp.git
-   cd todo-app
+   cd to-do_pet_cpp
     ```
 3. **Запустите приложение**
    ```bash
