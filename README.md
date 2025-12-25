@@ -70,7 +70,7 @@
 
 1. **Клонируйте репозиторий**
    ```bash
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/makoevvv/todo-app.git
    cd todo-app
     ```
 3. **Запустите приложение**
