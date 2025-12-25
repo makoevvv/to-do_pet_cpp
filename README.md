@@ -70,7 +70,7 @@
 
 1. **Клонируйте репозиторий**
    ```bash
-   git clone https://github.com/makoevvv/todo-app.git
+   git clone https://github.com/makoevvv/to-do_pet_cpp.git
    cd todo-app
     ```
 3. **Запустите приложение**
